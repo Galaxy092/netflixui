@@ -1,1477 +1,1452 @@
 :root {
-    --colorOne: #141414;
-    --colorTwo: #5c5c5c;
-    --colorWhite: #e5e5e5;
+  --colorOne: #141414;
+  --colorTwo: #5c5c5c;
+  --colorWhite: #e5e5e5;
 
-    --tileBorderRadius: 4px;
+  --tileBorderRadius: 4px;
 
-    --fontOne: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --fontOne: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .header {
-    padding: 0 2.5%;
-    display: flex;
-    position: absolute;
-    width: 100%;
+  padding: 0 2.5%;
+  display: flex;
+  position: absolute;
+  width: 100%;
 }
 
 .header img {
-    margin-left: 26px;
-    cursor: pointer;
+  margin-left: 26px;
+  cursor: pointer;
 }
 body {
-    font-family: var(--fontOne);
-    background-color: var(--colorOne);
+  font-family: var(--fontOne);
+  background-color: var(--colorOne);
 }
 .container {
-	height: 100vh;
-	background-image: linear-gradient(
-			to bottom,
-			rgba(0, 0, 0, 0.8) 0%,
-			rgba(0, 0, 0, 0.2) 20%,
-			rgba(20, 20, 20, 0.2) 80%,
-			rgba(20, 20, 20, 1) 100%
-		),
-		url(../Images/Squid\ Game.jpg);
-	background-size: cover;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 20%,
+      rgba(20, 20, 20, 0.2) 80%,
+      rgba(20, 20, 20, 1) 100%
+    ),
+    url(../Images/Love\ Alarm\ Poster.jpg);
+  background-size: cover;
 }
 .headerLogo {
-    width: 120px;
+  width: 120px;
 }
 .banner {
-	height: 70vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 25%;
-    margin: 0 4%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  margin: 0 4%;
 }
 .banner .poster {
-	width: 450px;
-    margin-left: 3px;
-    position: relative;
+  width: 450px;
+  margin-left: 3px;
+  position: relative;
 }
 .banner .subtitle {
-	font-size: 1.25rem;
-	color: #fff;
-	line-height: 1.2;
-	padding-top: 2rem;
-	margin-left: 5px;
-    position: relative;
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.2;
+  padding-top: 2rem;
+  margin-left: 5px;
+  position: relative;
 }
 .buttons {
-	margin-top: 0.25rem;
-    position: relative;
+  margin-top: 0.25rem;
+  position: relative;
 }
 .buttons .btn {
-	color: #000;
-	padding: 0.8rem 2rem;
-	margin-right: 0.75rem;
-	margin-left: 60px;
-	font-weight: 600;
-	border-radius: 4px;
-	background: #FFFFFF;
-	font-family: inherit;
-	font-size: 125%;
-	border: 0;
+  color: #000;
+  padding: 0.8rem 2rem;
+  margin-right: 0.75rem;
+  margin-left: 60px;
+  font-weight: 600;
+  border-radius: 4px;
+  background: #ffffff;
+  font-family: inherit;
+  font-size: 125%;
+  border: 0;
 }
 .buttons .btns {
-	color: #FFFFFF;
-	padding: 0.8rem 2rem;
-	margin-right: 0.75rem;
-	margin-left: 4px;
-	font-weight: 600;
-	border-radius: 4px;
-	background: #6D6D6EB3;
-	font-family: inherit;
-	font-size: 125%;
-	border: 0;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  margin-right: 0.75rem;
+  margin-left: 4px;
+  font-weight: 600;
+  border-radius: 4px;
+  background: #6d6d6eb3;
+  font-family: inherit;
+  font-size: 125%;
+  border: 0;
 }
 .buttons .btn i {
-	margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 .buttons .btns i {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 .buttons .btns:hover {
-	background: #6d6d6e54;
+  background: #6d6d6e54;
 }
 .buttons .btn:hover {
-	background: #ffffffa8;
+  background: #ffffffa8;
 }
 .thumbSection {
-    padding-top: 3%;
-    color: var(--colorWhite);
+  padding-top: 3%;
+  color: var(--colorWhite);
 }
 .thumbSection i {
-    font-size: 16px;
-    padding: 5px;
-    transition: all 0.429s ease-out;
+  font-size: 16px;
+  padding: 5px;
+  transition: all 250ms ease-out;
 }
 .thumbSection i:hover {
-    margin: 0px 20px;
+  margin: 0px 20px;
 }
 .thumbTitle {
-    font-size: 20px;
-    line-height: 14px;
-    font-weight: 600;
-    margin: 0 4% 12px;
+  font-size: 20px;
+  line-height: 14px;
+  font-weight: 600;
+  margin: 0 4% 12px;
 }
 .thumbTiles.swiper {
-    padding: 0 4%;
+  padding: 0 4%;
 }
 .thumbTile {
-    width: 20%;
+  width: 20%;
 }
 .thumbTile-image {
-    width: 100%;
-    border-radius: var(--tileBorderRadius);
+  width: 100%;
+  border-radius: var(--tileBorderRadius);
 }
 .thumbTiles .swiper-button-prev,
 .thumbTiles .swiper-button-next {
-    height: 100%;
+  height: 100%;
+  width: calc(4% - 5px);
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+.thumbTiles .swiper-button-prev {
+  left: 0;
+  border-top-right-radius: var(--tileBorderRadius);
+  border-bottom-right-radius: var(--tileBorderRadius);
+}
+.thumbTiles .swiper-button-next {
+  right: 0;
+  border-top-left-radius: var(--tileBorderRadius);
+  border-bottom-left-radius: var(--tileBorderRadius);
+}
+.thumbTiles .swiper-button-prev::after,
+.thumbTiles .swiper-button-next::after {
+  color: #fff;
+  font-size: 4vw;
+  font-weight: bold;
+  transition: transform 0.1s ease-out;
+}
+.footer {
+  margin: 100px auto 0;
+  width: 80%;
+  color: #808080;
+  cursor: pointer;
+}
+.footer .social a {
+  color: #808080;
+}
+.footer .social i {
+  padding-right: 26px;
+  font-size: 28px;
+}
+.footer .social i:hover {
+  color: #bdbdbd;
+  transition: all 0.3s ease 0s;
+  transform: scale(1.2);
+}
+.flex {
+  display: flex;
+  padding-bottom: 80px;
+}
+.footer .info {
+  width: 25%;
+}
+.footer .info ul {
+  list-style: none;
+  display: inline;
+  font-size: 13px;
+}
+.footer .info a {
+  color: #808080;
+  text-decoration: none;
+}
+
+.footer .info a:hover {
+  color: #bdbdbd;
+  text-decoration: underline;
+}
+
+.footer .info ul li {
+  margin-top: 18px;
+}
+
+/* iPhone 5/SE & Moto G4 & Galaxy S5/Fold*/
+@media only screen and (min-width: 234px) and (orientation: portrait) {
+  .container {
+    height: 30vh;
+  }
+  .header img {
+    margin-left: 0px;
+  }
+  .headerLogo {
+    width: 60px;
+  }
+  .banner {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: 0 2%;
+  }
+  .banner .poster {
+    width: 150px;
+  }
+  .banner .subtitle {
+    font-size: 0.25rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .swiper-wrapper {
+    padding: 0px 0px 5px 0px;
+  }
+  .thumbSection {
+    padding-top: 4.25%;
+    color: var(--colorWhite);
+  }
+  .thumbTitle {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0 4% 6px;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 92%;
+    width: calc(4% - 4px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 1.8vw;
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 390px 0px 0px 40px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 2vw;
+  }
+}
+/* iPhone 6/7/8 & iPhone 6/7/8 Plus & iPhone X & Pixel 2/2 XL*/
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+  .container {
+    height: 27vh;
+  }
+  .header img {
+    margin-left: 2px;
+  }
+  .headerLogo {
+    width: 60px;
+  }
+  .banner {
+    height: 19vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: 0 3.4%;
+  }
+  .banner .subtitle {
+    font-size: 0.25rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 4px;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .thumbSection {
+    padding-top: 3%;
+    color: var(--colorWhite);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 420px 0px 0px 40px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 415px) and (orientation: portrait) {
+  .container {
+    height: 30vh;
+  }
+  .header img {
+    margin-left: 6px;
+  }
+  .headerLogo {
+    width: 70px;
+  }
+  .banner {
+    height: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: 0 4%;
+  }
+  .banner .poster {
+    width: 200px;
+  }
+  .banner .subtitle {
+    font-size: 0.35rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 4px;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 0.4rem 1rem;
+    margin-right: 0.5rem;
+    margin-left: 22px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .thumbSection {
+    padding-top: 3%;
+    color: var(--colorWhite);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 500px 0px 0px 50px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 520px) and (orientation: portrait) {
+  .container {
+    height: 40vh;
+  }
+  .header img {
+    margin: 0 1%;
+  }
+  .headerLogo {
+    width: 100px;
+  }
+  .banner {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: 0 4%;
+  }
+  .banner .poster {
+    width: 250px;
+  }
+  .banner .subtitle {
+    font-size: 0.5rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 4px;
+  }
+  .buttons {
+    margin-top: 0.5rem;
+    display: flex;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 97.5%;
+    width: 4%;
     width: calc(4% - 5px);
     top: 0;
     bottom: 0;
     margin: 0;
     background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 520px 0px 0px 60px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 2vw;
+  }
 }
-.thumbTiles .swiper-button-prev {
-    left: 0;
-    border-top-right-radius: var(--tileBorderRadius);
-    border-bottom-right-radius: var(--tileBorderRadius);
+@media only screen and (min-width: 640px) and (orientation: portrait) {
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 97.5%;
+    width: 4%;
+    width: calc(4% - 5px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 290px 0px 0px 60px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 2vw;
+  }
 }
-.thumbTiles .swiper-button-next {
-    right: 0;
-    border-top-left-radius: var(--tileBorderRadius);
-    border-bottom-left-radius: var(--tileBorderRadius);
-}
-.thumbTiles .swiper-button-prev::after,
-.thumbTiles .swiper-button-next::after {
-    color: #fff;
-    font-size: 4vw;
-    font-weight: bold;
-    transition: transform 0.1s ease-out;
-}
-.footer {
-	margin: 100px auto 0;
-	width: 80%;
-	color: #808080;
-    cursor: pointer;
-}
-.footer .social a {
-    color: #808080;
-}
-.footer .social i {
-	padding-right: 26px;
-	font-size: 28px;
-}
-.footer .social i:hover {
-    color: #bdbdbd;
-    transition: all 0.3s ease 0s;
-    transform: scale(1.2);
-}
-.flex {
-	display: flex;
-	padding-bottom: 80px;
-}
-.footer .info {
-	width: 25%;
-}
-.footer .info ul {
-	list-style: none;
-	display: inline;
-	font-size: 13px;
-}
-.footer .info a {
-    color: #808080;
-    text-decoration: none;
-}
-
-.footer .info a:hover {
-    color: #bdbdbd;
-    text-decoration: underline;
-}
-
-.footer .info ul li {
-	margin-top: 18px;
-}
-
-/* iPhone 5/SE & Moto G4 & Galaxy S5/Fold*/
-@media only screen
-    and (min-width: 234px)
-    and (orientation: portrait) {
-        .container {
-            height: 30vh;
-        }
-        .header img {
-            margin-left: 0px;
-        }
-        .headerLogo {
-            width: 60px;
-        }
-        .banner {
-            height: 20vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 40%;
-            margin: 0 2% ;
-        }
-        .banner .poster {
-            width: 150px;
-        }
-        .banner .subtitle {
-            font-size: 0.25rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 0.2rem 0.5rem;
-            margin-right: 0.5rem;
-            margin-left: 10px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 0.2rem 0.5rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .swiper-wrapper {
-            padding: 0px 0px 5px 0px;
-        }
-        .thumbSection {
-            padding-top: 4.25%;
-            color: var(--colorWhite);
-        }
-        .thumbTitle {
-            font-size: 12px;
-            line-height: 14px;
-            font-weight: 600;
-            margin: 0 4% 6px;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-            height: 92%;
-            width: calc(4% - 4px);
-            top: 0;
-            bottom: 0;
-            margin: 0;
-            background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 1.8vw;
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 390px 0px 0px 40px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 18px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 2vw;
-        }
-    }
-/* iPhone 6/7/8 & iPhone 6/7/8 Plus & iPhone X & Pixel 2/2 XL*/
-@media only screen
-    and (min-width: 375px)
-    and (orientation: portrait) {
-        .container {
-            height: 27vh;
-        }
-        .header img {
-            margin-left: 2px;
-        }
-        .headerLogo {
-            width: 60px;
-        }
-        .banner {
-            height: 19vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 35%;
-            margin: 0 3.4%;
-        }
-        .banner .subtitle {
-            font-size: 0.25rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 4px;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 0.2rem 0.5rem;
-            margin-right: 0.5rem;
-            margin-left: 16px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 0.2rem 0.5rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .thumbSection {
-            padding-top: 3%;
-            color: var(--colorWhite);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 420px 0px 0px 40px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 18px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 2vw;
-        }
-    }
-@media only screen
-    and (min-width: 415px)
-    and (orientation: portrait) {
-        .container {
-            height: 30vh;
-        }
-        .header img {
-            margin-left: 6px;
-        }
-        .headerLogo {
-            width: 70px;
-        }
-        .banner {
-            height: 16vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 35%;
-            margin: 0 4% ;
-        }
-        .banner .poster {
-            width: 200px;
-        }
-        .banner .subtitle {
-            font-size: 0.35rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 4px;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 0.4rem 1rem;
-            margin-right: 0.5rem;
-            margin-left: 22px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 0.4rem 1rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .thumbSection {
-            padding-top: 3%;
-            color: var(--colorWhite);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 500px 0px 0px 50px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 18px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 2vw;
-        }
-    }
-@media only screen 
-    and (min-width: 520px)
-    and (orientation: portrait) {
-        .container {
-            height: 40vh;
-        }
-        .header img {
-            margin: 0 1%;
-        }
-        .headerLogo {
-            width: 100px;
-        }
-        .banner {
-            height: 20vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 35%;
-            margin: 0 4% ;
-        }
-        .banner .poster {
-            width: 250px;
-        }
-        .banner .subtitle {
-            font-size: 0.5rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 4px;
-        }
-        .buttons {
-            margin-top: 0.5rem;
-            display: flex;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-        height: 97.5%;
-        width: 4%;
-        width: calc(4% - 5px);
-        top: 0;
-        bottom: 0;
-        margin: 0;
-        background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 520px 0px 0px 60px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 18px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 2vw;
-        }
-    }
-@media only screen 
-    and (min-width: 640px)
-    and (orientation: portrait) {
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-        height: 97.5%;
-        width: 4%;
-        width: calc(4% - 5px);
-        top: 0;
-        bottom: 0;
-        margin: 0;
-        background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 290px 0px 0px 60px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 10px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 18px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 2vw;
-        }
-    }
 /* iPad */
-@media only screen 
-    and (min-width: 768px) 
-    and (orientation: portrait) {
-        .container {
-            height: 40vh;
-        }
-        .header img {
-            margin-left: 6px;
-        }
-        .headerLogo {
-            width: 100px;
-        }
-        .banner {
-            height: 25vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 40%;
-            margin: 0 4% ;
-        }
-        .banner .poster {
-            width: 350px;
-        }
-        .banner .subtitle {
-            font-size: 1rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 0.6rem 1.5rem;
-            margin-right: 0.5rem;
-            margin-left: 30px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 0.6rem 1.5rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-        height: 97%;
-        width: 4%;
-        width: calc(4% - 5px);
-        top: 0;
-        bottom: 0;
-        margin: 0;
-        background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles .swiper-button-prev:hover::after,
-        .thumbTiles .swiper-button-next:hover::after {
-            transform: scale(1.25);
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 350px 0px 0px 75px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 50px;
-        }
-        .footer .social i {
-            padding-right: 40px;
-            font-size: 40px;
-        }
-        .footer .info ul li {
-            margin-top: 40px;
-            font-size: 2vw;
-        }
-    }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .container {
+    height: 40vh;
+  }
+  .header img {
+    margin-left: 6px;
+  }
+  .headerLogo {
+    width: 100px;
+  }
+  .banner {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: 0 4%;
+  }
+  .banner .poster {
+    width: 350px;
+  }
+  .banner .subtitle {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 0.6rem 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 30px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 97%;
+    width: 4%;
+    width: calc(4% - 5px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 350px 0px 0px 75px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .footer .social i {
+    padding-right: 40px;
+    font-size: 40px;
+  }
+  .footer .info ul li {
+    margin-top: 40px;
+    font-size: 2vw;
+  }
+}
 /* iPad Pro */
-@media only screen 
-    and (min-width: 1024px) 
-    and (orientation: portrait) {
-        .container {
-            height: 40vh;
-        }
-        .header img {
-            margin-left: 10px;
-        }
-        .headerLogo {
-            width: 100px;
-        }
-        .banner {
-            height: 25vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 40%;
-            margin: 0 4% ;
-        }
-        .banner .poster {
-            width: 450px;
-        }
-        .banner .subtitle {
-            font-size: 1rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 0.8rem 2rem;
-            margin-right: 0.5rem;
-            margin-left: 40px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 0.8rem 2rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles .swiper-button-prev:hover::after,
-        .thumbTiles .swiper-button-next:hover::after {
-            transform: scale(1.25);
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 450px 0px 0px 95px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 50px;
-            font-size: 40px;
-        }
-        .footer .info ul li {
-            margin-top: 40px;
-            font-size: 2vw;
-        }
-    }
-    @media only screen
-    and (min-width: 568px)
-    and (orientation: landscape) {
-        .container {
-            height: 80vh;
-        }
-        .header img {
-            margin-left: 5px;
-        }
-        .headerLogo {
-            width: 70px;
-        }
-        .banner {
-            height: 45vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 40%;
-            margin: 0 3.8% ;
-        }
-        .banner .poster {
-            width: 200px;
-        }
-        .banner .subtitle {
-            font-size: 0.5rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 0.4rem 1rem;
-            margin-right: 0.5rem;
-            margin-left: 23px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 0.4rem 1rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .swiper-wrapper {
-            padding: 0px 0px 5px 0px;
-        }
-        .thumbSection {
-            padding-top: 4.25%;
-            color: var(--colorWhite);
-        }
-        .thumbTitle {
-            font-size: 12px;
-            line-height: 14px;
-            font-weight: 600;
-            margin: 0 4% 6px;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-            height: 95%;
-            width: calc(4% - 4px);
-            top: 0;
-            bottom: 0;
-            margin: 0;
-            background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles .swiper-button-prev:hover::after,
-        .thumbTiles .swiper-button-next:hover::after {
-            transform: scale(1.25);
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 570px 0px 0px 40px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 18px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 2vw;
-        }
-    }
-@media only screen
-    and (min-width: 640px)
-    and (orientation: landscape) {
-        .container {
-            height: 80vh;
-        }
-        .header img {
-            margin-left: 5px;
-        }
-        .headerLogo {
-            width: 70px;
-        }
-        .banner {
-            height: 45vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 40%;
-            margin: 0 3.8% ;
-        }
-        .banner .poster {
-            width: 200px;
-        }
-        .banner .subtitle {
-            font-size: 0.5rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 0.4rem 1rem;
-            margin-right: 0.5rem;
-            margin-left: 30px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 0.4rem 1rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .swiper-wrapper {
-            padding: 0px 0px 5px 0px;
-        }
-        .thumbSection {
-            padding-top: 4.25%;
-            color: var(--colorWhite);
-        }
-        .thumbTitle {
-            font-size: 12px;
-            line-height: 14px;
-            font-weight: 600;
-            margin: 0 4% 6px;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-            height: 88%;
-            width: calc(4% - 4px);
-            top: 0;
-            bottom: 0;
-            margin: 0;
-            background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles .swiper-button-prev:hover::after,
-        .thumbTiles .swiper-button-next:hover::after {
-            transform: scale(1.25);
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 300px 0px 0px 65px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 18px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 2vw;
-        }
-    }
-@media only screen
-    and (min-width: 812px)
-    and (orientation: landscape) {
-        .container {
-            height: 100vh;
-        }
-        .header img {
-            margin-left: 10px;
-        }
-        .headerLogo {
-            width: 100px;
-        }
-        .banner {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 25%;
-            margin: 0 4% ;
-        }
-        .banner .poster {
-            width: 300px;
-        }
-        .banner .subtitle {
-            font-size: 0.5rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 0.8rem 1.5rem;
-            margin-right: 0.5rem;
-            margin-left: 34px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 0.8rem 2rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 10px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .swiper-wrapper {
-            padding: 0px 0px 5px 0px;
-        }
-        .thumbSection {
-            padding-top: 4.25%;
-            color: var(--colorWhite);
-        }
-        .thumbTitle {
-            font-size: 12px;
-            line-height: 14px;
-            font-weight: 600;
-            margin: 0 4% 6px;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-            height: 92%;
-            width: calc(4% - 4px);
-            top: 0;
-            bottom: 0;
-            margin: 0;
-            background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles .swiper-button-prev:hover::after,
-        .thumbTiles .swiper-button-next:hover::after {
-            transform: scale(1.25);
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 380px 0px 0px 100px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 18px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 1.5vw;
-        }
-    }
-@media only screen
-    and (min-width: 1024px)
-    and (orientation: landscape) {
-        .container {
-            height: 80vh;
-        }
-        .header img {
-            margin-left: 14px;
-        }
-        .headerLogo {
-            width: 120px;
-        }
-        .banner {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 35%;
-            margin: 0 4% ;
-        }
-        .banner .poster {
-            width: 450px;
-        }
-        .banner .subtitle {
-            font-size: 1rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 1rem 2rem;
-            margin-right: 0.5rem;
-            margin-left: 42px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 15px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 1rem 2rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 15px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .swiper-wrapper {
-            padding: 0px 0px 5px 0px;
-        }
-        .thumbSection {
-            padding-top: 4.25%;
-            color: var(--colorWhite);
-        }
-        .thumbTitle {
-            font-size: 20px;
-            line-height: 14px;
-            font-weight: 600;
-            margin: 0 4% 12px;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-            height: 92%;
-            width: calc(4% - 4px);
-            top: 0;
-            bottom: 0;
-            margin: 0;
-            background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles .swiper-button-prev:hover::after,
-        .thumbTiles .swiper-button-next:hover::after {
-            transform: scale(1.25);
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 480px 0px 0px 100px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 26px;
-            font-size: 30px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 1.5vw;
-        }
-    }
-@media only screen
-    and (min-width: 1200px)
-    and (orientation: landscape) {
-        .container {
-            height: 75vh;
-        }
-        .header img {
-            margin-left: 10px;
-        }
-        .headerLogo {
-            width: 120px;
-        }
-        .banner {
-            height: 50vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 35%;
-            margin: 0 4% ;
-        }
-        .banner .poster {
-            width: 450px;
-        }
-        .banner .subtitle {
-            font-size: 1rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 1rem 2rem;
-            margin-right: 0.5rem;
-            margin-left: 34px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 15px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 1rem 2rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 15px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .swiper-wrapper {
-            padding: 0px 0px 5px 0px;
-        }
-        .thumbSection {
-            padding-top: 4.25%;
-            color: var(--colorWhite);
-        }
-        .thumbTitle {
-            font-size: 20px;
-            line-height: 14px;
-            font-weight: 600;
-            margin: 0 4% 12px;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-            height: 92%;
-            width: calc(4% - 4px);
-            top: 0;
-            bottom: 0;
-            margin: 0;
-            background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles .swiper-button-prev:hover::after,
-        .thumbTiles .swiper-button-next:hover::after {
-            transform: scale(1.25);
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 550px 0px 0px 100px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 50px;
-            font-size: 40px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 1.5vw;
-        }
-    }
-    @media only screen
-    and (min-width: 1200px) {
-        .container {
-            height: 100vh;
-        }
-        .header img {
-            margin-left: 20px;
-        }
-        .headerLogo {
-            width: 120px;
-        }
-        .banner {
-            height: 75vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 30%;
-            text-indent: 29px;
-            margin: 0 4% ;
-        }
-        .banner .poster {
-            width: 450px;
-            margin-top: 200px;
-        }
-        .banner .subtitle {
-            font-size: 1rem;
-            color: #fff;
-            line-height: 1.2;
-            padding-top: 0.5rem;
-            margin-left: 0 4%;
-        }
-        .buttons {
-            margin-top: 0.05rem;
-            display: flex;
-        }
-        .buttons .btn {
-            color: #000;
-            padding: 1rem 2rem;
-            margin-right: 0.5rem;
-            margin-left: 60px;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #FFFFFF;
-            font-family: inherit;
-            font-size: 18px;
-            border: 0;
-        }
-        .buttons .btns {
-            color: #FFFFFF;
-            padding: 1rem 2rem;
-            font-weight: 600;
-            border-radius: 4px;
-            background: #6D6D6EB3;
-            font-family: inherit;
-            font-size: 18px;
-            border: 0;
-        }
-        .buttons .btn i {
-            margin-right: 0.5rem;
-        }
-        .buttons .btns i {
-            margin-right: 10px;
-        }
-        .swiper-wrapper {
-            padding: 0px 0px 5px 0px;
-        }
-        .thumbSection {
-            padding-top: 4.25%;
-            color: var(--colorWhite);
-        }
-        .thumbTitle {
-            font-size: 20px;
-            line-height: 14px;
-            font-weight: 600;
-            margin: 0 4% 12px;
-        }
-        .thumbTiles .swiper-button-prev,
-        .thumbTiles .swiper-button-next {
-            height: 94%;
-            width: calc(4% - 4px);
-            top: 0;
-            bottom: 0;
-            margin: 0;
-            background-color: rgba(20, 20, 20, 0.5);
-        }
-        .thumbTiles .swiper-button-prev::after,
-        .thumbTiles .swiper-button-next::after {
-            display: none;
-            font-size: 2.4vw;
-        }
-        .thumbTiles .swiper-button-prev:hover::after,
-        .thumbTiles .swiper-button-next:hover::after {
-            transform: scale(1.25);
-        }
-        .thumbTiles:hover .swiper-button-prev::after,
-        .thumbTiles:hover .swiper-button-next::after {
-            display: block;
-        }
-        .footer {
-            margin: 650px 0px 0px 200px;
-            width: 80%;
-        }
-        .flex {
-            display: flex;
-            padding-bottom: 30px;
-        }
-        .footer .social i {
-            padding-right: 80px;
-            font-size: 40px;
-        }
-        .footer .info ul li {
-            margin-top: 28px;
-            font-size: 1vw;
-        }
-    }
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .container {
+    height: 40vh;
+  }
+  .header img {
+    margin-left: 10px;
+  }
+  .headerLogo {
+    width: 100px;
+  }
+  .banner {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: 0 4%;
+  }
+  .banner .poster {
+    width: 450px;
+  }
+  .banner .subtitle {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 0.8rem 2rem;
+    margin-right: 0.5rem;
+    margin-left: 40px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 450px 0px 0px 95px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 50px;
+    font-size: 40px;
+  }
+  .footer .info ul li {
+    margin-top: 40px;
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 568px) and (orientation: landscape) {
+  .container {
+    height: 80vh;
+  }
+  .header img {
+    margin-left: 5px;
+  }
+  .headerLogo {
+    width: 70px;
+  }
+  .banner {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: 0 3.8%;
+  }
+  .banner .poster {
+    width: 200px;
+  }
+  .banner .subtitle {
+    font-size: 0.5rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 0.4rem 1rem;
+    margin-right: 0.5rem;
+    margin-left: 23px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .swiper-wrapper {
+    padding: 0px 0px 5px 0px;
+  }
+  .thumbSection {
+    padding-top: 4.25%;
+    color: var(--colorWhite);
+  }
+  .thumbTitle {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0 4% 6px;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 95%;
+    width: calc(4% - 4px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 570px 0px 0px 40px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 640px) and (orientation: landscape) {
+  .container {
+    height: 80vh;
+  }
+  .header img {
+    margin-left: 5px;
+  }
+  .headerLogo {
+    width: 70px;
+  }
+  .banner {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: 0 3.8%;
+  }
+  .banner .poster {
+    width: 200px;
+  }
+  .banner .subtitle {
+    font-size: 0.5rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 0.4rem 1rem;
+    margin-right: 0.5rem;
+    margin-left: 30px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .swiper-wrapper {
+    padding: 0px 0px 5px 0px;
+  }
+  .thumbSection {
+    padding-top: 4.25%;
+    color: var(--colorWhite);
+  }
+  .thumbTitle {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0 4% 6px;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 88%;
+    width: calc(4% - 4px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 300px 0px 0px 65px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape) {
+  .container {
+    height: 100vh;
+  }
+  .header img {
+    margin-left: 10px;
+  }
+  .headerLogo {
+    width: 100px;
+  }
+  .banner {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    margin: 0 4%;
+  }
+  .banner .poster {
+    width: 300px;
+  }
+  .banner .subtitle {
+    font-size: 0.5rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 34px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 10px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .swiper-wrapper {
+    padding: 0px 0px 5px 0px;
+  }
+  .thumbSection {
+    padding-top: 4.25%;
+    color: var(--colorWhite);
+  }
+  .thumbTitle {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0 4% 6px;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 92%;
+    width: calc(4% - 4px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 380px 0px 0px 100px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  .container {
+    height: 80vh;
+  }
+  .header img {
+    margin-left: 14px;
+  }
+  .headerLogo {
+    width: 120px;
+  }
+  .banner {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: 0 4%;
+  }
+  .banner .poster {
+    width: 450px;
+  }
+  .banner .subtitle {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 1rem 2rem;
+    margin-right: 0.5rem;
+    margin-left: 42px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 15px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .swiper-wrapper {
+    padding: 0px 0px 5px 0px;
+  }
+  .thumbSection {
+    padding-top: 4.25%;
+    color: var(--colorWhite);
+  }
+  .thumbTitle {
+    font-size: 20px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0 4% 12px;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 92%;
+    width: calc(4% - 4px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 480px 0px 0px 100px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 26px;
+    font-size: 30px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+  .container {
+    height: 75vh;
+  }
+  .header img {
+    margin-left: 10px;
+  }
+  .headerLogo {
+    width: 120px;
+  }
+  .banner {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: 0 4%;
+  }
+  .banner .poster {
+    width: 450px;
+  }
+  .banner .subtitle {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 1rem 2rem;
+    margin-right: 0.5rem;
+    margin-left: 34px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 15px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .swiper-wrapper {
+    padding: 0px 0px 5px 0px;
+  }
+  .thumbSection {
+    padding-top: 4.25%;
+    color: var(--colorWhite);
+  }
+  .thumbTitle {
+    font-size: 20px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0 4% 12px;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 92%;
+    width: calc(4% - 4px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 550px 0px 0px 100px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 50px;
+    font-size: 40px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    height: 100vh;
+  }
+  .header img {
+    margin-left: 20px;
+  }
+  .headerLogo {
+    width: 120px;
+  }
+  .banner {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    text-indent: 29px;
+    margin: 0 4%;
+  }
+  .banner .poster {
+    width: 450px;
+    margin-top: 200px;
+  }
+  .banner .subtitle {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    margin-left: 0 4%;
+  }
+  .buttons {
+    margin-top: 0.05rem;
+    display: flex;
+  }
+  .buttons .btn {
+    color: #000;
+    padding: 1rem 2rem;
+    margin-right: 0.5rem;
+    margin-left: 60px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 18px;
+    border: 0;
+  }
+  .buttons .btns {
+    color: #ffffff;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #6d6d6eb3;
+    font-family: inherit;
+    font-size: 18px;
+    border: 0;
+  }
+  .buttons .btn i {
+    margin-right: 0.5rem;
+  }
+  .buttons .btns i {
+    margin-right: 10px;
+  }
+  .swiper-wrapper {
+    padding: 0px 0px 5px 0px;
+  }
+  .thumbSection {
+    padding-top: 4.25%;
+    color: var(--colorWhite);
+  }
+  .thumbTitle {
+    font-size: 20px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0 4% 12px;
+  }
+  .thumbTiles .swiper-button-prev,
+  .thumbTiles .swiper-button-next {
+    height: 94%;
+    width: calc(4% - 4px);
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+  }
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+  .footer {
+    margin: 650px 0px 0px 200px;
+    width: 80%;
+  }
+  .flex {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .footer .social i {
+    padding-right: 80px;
+    font-size: 40px;
+  }
+  .footer .info ul li {
+    margin-top: 28px;
+    font-size: 1vw;
+  }
+}
